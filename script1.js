@@ -1,0 +1,19 @@
+$(document).ready(function(){
+    $('#signup-form').validate({
+        rules:{
+        fname:{
+          required:true
+        },
+        emailAddress:{
+            email:true
+        },
+        gender:{
+            required:true
+        }      
+},
+messages:{
+    fname:"",
+    gender:""
+}
+    })
+})
